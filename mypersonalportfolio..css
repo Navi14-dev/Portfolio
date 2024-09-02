@@ -20,3 +20,78 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: bold;
+}
+
+nav ul li a:hover {
+    color: red;
+
+}
+
+.port {
+    margin-left: 8%;
+    margin-top: 11%;
+
+}
+
+.port h1 {
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span {
+    color: orange;
+}
+
+.port p{
+    color: #555;
+    line-height: 22px;
+
+}
+
+.port a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images1{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images1 img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s left 1s;
+}
+
+.images1:hover .nature {
+    bottom: 40px;
+}
+.images1:hover .navi {
+    left: 45%;
+}
+
