@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+.section-skills {
+  color: #5ffbf1;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  
+}
+
+.section-skills::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #5ffbf1, transparent);
+  
+}
+.skills-section .section-skills{
+  
+  margin-top: 0px;
+  
+  
+}
+.certificates-section h1{
+    color: rgb(68, 171, 168);
+}
+.certificates-section h1 .skills{
+  color: aqua;
+  font-size: 2.5rem;
+}
+.badges-section h1{
+    color: rgb(68, 171, 168);;
+}
+.badges-section h1 .skills{
+  color: aqua;
+  font-size: 2.5rem;
+}
+
+
+    .certificates-section, .badges-section {
+        background-color: #0a192f;
+        padding: 6rem 2rem;
+        text-align: center;
+    }
+    
+    .certificates-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        overflow-x: auto;
+        gap: 2rem;
+        padding-bottom: 2rem;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer and Edge */
+        margin-top: 30px;
+        margin-bottom: -190px;
+    }
+    .badges-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        overflow-x: auto;
+        gap: 2rem;
+        padding-bottom: 2rem;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer and Edge */
+        margin-top: 30px;
+    }
+    
+    .certificates-container::-webkit-scrollbar, .badges-container::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera */
+    }
+    
+    .certificate-card, .badge-card {
+        background: rgba(2, 12, 27, 0.9);
+        border-radius: 15px;
+        padding: 1.5rem;
+        text-align: center;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeIn 0.6s ease forwards;
+    }
+    
+    .certificate-card:nth-child(2), .badge-card:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    
+    .certificate-card:nth-child(3), .badge-card:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+    
+    .certificate-card:nth-child(4), .badge-card:nth-child(4) {
+        animation-delay: 0.6s;
+    }
+    
+    .certificate-card:hover, .badge-card:hover {
+        border-color: transparent;
+        box-shadow: 0 0 50px rgba(3, 236, 220, 0.2);
+        transform: translateY(-10px) scale(1.02);
+        
+    }
+    
+    .certificate-image, .badge-image {
+        height: 200px;
+        width: 300px;
+        margin-bottom: 1rem;
+        border-radius: 15px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+    
+    .badge-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 40%;
+    }
+    
+    .certificate-image::before, .badge-image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: 200% 200%;
+       
+    }
+    
+    .certificate-image img, .badge-image img {
+        width: 230px;
+        height: 170px;
+        object-fit: contain;
+        position: relative;
+        z-index: 1;
+        border-radius: 25px;
+    }
+    
+    .certificate-card:hover .certificate-image, .badge-card:hover .badge-image {
+        transform: scale(1.1);
+    }
+    
+    .certificate-title, .badge-title {
+        color: #5ffbf1;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+   
+    </style>
+    
+<body>
+    
+        <section class="certificates-section">
+            <h1 class="section-skills">My <span class="skills"> CERTIFICATES</span></h1>
+            <div class="certificates-container">
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="JAVA BY IT SPECIALIST.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">Java by IT Specialist</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="CORE JAVA BY TECHWING.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">CORE JAVA BY TECHWING</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="CISCO NETWORKING BASICS.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">CISCO NETWORKING BASICS</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="LINUX FUNDAMENTALS.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">LINUX FUNDAMENTALS</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="HTML , CSS CERTIFICATE.jpg" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">HTML , CSS CERTIFICATE</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="JAVA BY GREAT LEARNING.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">JAVA BY GREAT LEARNING</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="BEST PERFORMER IN CORE JAVA.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">BEST PERFORMER IN CORE JAVA</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="SQL BASIC BY HACKERRANK.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">SQL BASIC BY HACKERRANK</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="SQL SERVER 2014 ,SECURITY FUNDAMENTALS CERTIFICATE.jpg" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">SQL SERVER 2014 ,SECURITY FUNDAMENTALS CERTIFICATE</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="CISCO CYBER SECURITY.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">CISCO CYBER SECURITY</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="PYTHON FOR DATA SCIENCE BY IBM.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">PYTHON FOR DATA SCIENCE BY IBM</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="POSTMAN API.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">POSTMAN API</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="PYTHON BASIC BY HACKERRANK.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">PYTHON BASIC BY HACKERRANK</div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="PYTHON 101 FOR DATA SCIENCE BY IBM.png" alt="Certificate Image">
+                    </div>
+                    <div class="certificate-title">PYTHON 101 FOR DATA SCIENCE BY IBM</div>
+                </div>
+                
+                
+            </div>
+        </section>
+        
+        <section class="badges-section">
+            <h1 class="section-skills">My <span class="skills"> BADGES</span> </h1>
+            <div class="badges-container">
+                <div class="badge-card">
+                    <div class="badge-image">
+                        <img src="JAVA CERTIFICATION BADGE.jpg" alt="Badge Image">
+                    </div>
+                    <div class="badge-title">JAVA CERTIFICATION BADGE BY IT SPECIALIST</div>
+                </div>
+                <div class="badge-card">
+                    <div class="badge-image">
+                        <img src="POSTMAN API BADGE.png" alt="Badge Image">
+                    </div>
+                    <div class="badge-title">POSTMAN API BADGE</div>
+                </div>
+                <div class="badge-card">
+                    <div class="badge-image">
+                        <img src="CISCO - Cyber Security Badge.png" alt="Badge Image">
+                    </div>
+                    <div class="badge-title">CISCO - Cyber Security Badge</div>
+                </div>
+                <div class="badge-card">
+                    <div class="badge-image">
+                        <img src="PYTHON FOR DATA SCIENCE BADGE.png" alt="Badge Image">
+                    </div>
+                    <div class="badge-title">PYTHON FOR DATA SCIENCE BADGE BY IBM</div>
+                </div>
+                <div class="badge-card">
+                    <div class="badge-image">
+                        <img src="CISCO - Networking Basics.png" alt="Badge Image">
+                    </div>
+                    <div class="badge-title">CISCO - Networking Basics</div>
+                </div>
+                <div class="badge-card">
+                    <div class="badge-image">
+                        <img src="Watsonx AI by IBM.png" alt="Badge Image">
+                    </div>
+                    <div class="badge-title">Watsonx AI by IBM</div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
